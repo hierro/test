@@ -1,0 +1,1 @@
+bianco,nero,rosso,blu,verde

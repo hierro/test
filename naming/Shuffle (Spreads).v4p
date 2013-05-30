@@ -1,0 +1,135 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
+   <PATCH nodename="H:\WORk\FONEMA\TELECOM\PRE\Shuffle (Spreads).v4p" systemname="Shuffle (Spreads)" filename="H:\WORk\FONEMA\TELECOM\PRE\Shuffle (Spreads).v4p">
+   <BOUNDS height="9195" left="13470" top="1905" type="Window" width="4650">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="7" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="450" top="1110" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6420" top="4875" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="2250" left="450" top="1110" type="Box" width="1290">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0,1,2,3,4,5,6,7,8,9">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <NODE id="6" nodename="Count (Value)" systemname="Count (Value)">
+   <BOUNDS height="0" left="3375" top="3330" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="Input" srcnodeid="7" srcpinname="Y Output Value">
+   </LINK>
+   <NODE id="5" nodename="SORT (SPREADS)" systemname="Sort (Spreads)">
+   <BOUNDS height="0" left="2835" top="4875" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
+   <PIN pinname="Algorithm" slicecount="1" values="QuickSort">
+   </PIN>
+   </NODE>
+   <NODE id="4" nodename="GetSlice (Spreads)" systemname="GetSlice (Spreads)">
+   <BOUNDS height="270" left="1665" top="5235" type="Node" width="1650">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="4" dstpinname="Index" srcnodeid="5" srcpinname="Former Index">
+   </LINK>
+   <LINK dstnodeid="4" dstpinname="Input" srcnodeid="7" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="3" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="315" top="5790" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6720" top="5175" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="2205" left="315" top="5790" type="Box" width="1395">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="Y Input Value" srcnodeid="4" srcpinname="Output">
+   </LINK>
+   <NODE id="2" nodename="Random (Value)" systemname="Random (Value)">
+   <BOUNDS height="0" left="2835" top="4365" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="9999999">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="1" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="2130" top="2370" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="8055" top="3270" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="690" left="2130" top="2370" type="Box" width="765">
+   </BOUNDS>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="DoShuffle">
+   </PIN>
+   </NODE>
+   <NODE id="0" nodename="Select (Value)" systemname="Select (Value)">
+   <BOUNDS height="0" left="2835" top="3930" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="0" dstpinname="Input" srcnodeid="1" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="2" dstpinname="Enabled" srcnodeid="0" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="0" dstpinname="Select" srcnodeid="6" srcpinname="Count">
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Input" srcnodeid="2" srcpinname="Output">
+   </LINK>
+   </PATCH>
