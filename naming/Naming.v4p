@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
    <PATCH nodename="H:\DEVELOPPA\GitHub\test\naming\Naming.v4p" systemname="Naming" filename="H:\WORk\FONEMA\TELECOM\DEV\naming\Naming.v4p">
-   <BOUNDS type="Window" left="885" top="555" width="9840" height="8430">
+   <BOUNDS type="Window" left="885" top="570" width="9840" height="10350">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="1110" top="2580" width="100" height="100">
@@ -170,7 +170,7 @@
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output" dstnodeid="13" dstpinname="Input 3">
    </LINK>
-   <NODE systemname="addCitizen" filename="..\CodeID\addCitizen.v4p" nodename="..\CodeID\addCitizen.v4p" componentmode="InAWindow" id="16">
+   <NODE systemname="addCitizen" filename="..\CodeID\addCitizen.v4p" nodename="..\CodeID\addCitizen.v4p" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="1170" top="7965" width="2160" height="270">
    </BOUNDS>
    <PIN pinname="db" visible="1" slicecount="1" values="||">
@@ -460,12 +460,6 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="39" dstpinname="Count">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
-   <BOUNDS type="Node" left="5745" top="1410" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5745" top="1410" width="795" height="240">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="47">
    <BOUNDS type="Node" left="3075" top="1605" width="100" height="100">
    </BOUNDS>
@@ -587,7 +581,7 @@
    </BOUNDS>
    <PIN pinname="Cycles" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="0.35">
+   <PIN pinname="Period" slicecount="1" values="0.74">
    </PIN>
    <PIN pinname="Pause" slicecount="1" visible="1" values="1">
    </PIN>
@@ -615,9 +609,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Pause">
@@ -656,48 +650,4 @@
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="29" dstpinname="Input 1">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="61" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11295" top="4740" width="1020" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11295" top="4740" width="1020" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="ascasdasdad">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
-   <BOUNDS type="Node" left="12555" top="4050" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12555" top="4050" width="795" height="240">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Node" left="13635" top="4200" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13635" top="4200" width="795" height="240">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
-   <BOUNDS type="Node" left="13800" top="3480" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="13800" top="3480" width="795" height="240">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="65">
-   <BOUNDS type="Node" left="12510" top="3210" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12510" top="3210" width="795" height="240">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
-   <BOUNDS type="Node" left="10845" top="3840" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10845" top="3840" width="795" height="240">
-   </BOUNDS>
-   </NODE>
    </PATCH>
